@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甲鱼的照片墙 - 随意摆放的美好回忆</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>📸 甲鱼的照片墙</h1>
+        <p>随意摆放的美好回忆 ✨</p>
+        <div class="controls">
+            <button id="shuffleBtn" class="btn">🎲 随机排序</button>
+            <button id="autoPlayBtn" class="btn">▶️ 自动播放</button>
+            <button id="resetBtn" class="btn">🔄 重置顺序</button>
+        </div>
+    </header>
+
+    <main>
+        <div id="photoContainer" class="photo-grid">
+            <!-- 照片将通过JavaScript动态加载 -->
+        </div>
+    </main>
+
+    <!-- 照片查看器 -->
+    <div id="photoViewer" class="photo-viewer">
+        <span class="close">&times;</span>
+        <img class="viewer-content" id="viewerImage">
+        <div id="caption"></div>
+    </div>
+
+    <!-- 加载动画 -->
+    <div id="loading" class="loading">
+        <div class="loading-spinner"></div>
+        <p>正在加载精彩瞬间...</p>
+    </div>
+
+    <footer>
+        <p>💝 每一张照片都是一个故事，每一次点击都是一次回忆</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
